@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // first set up an object to animate
         // we'll use a familiar red square
         let square = UIView()
-        square.frame = CGRect(x: 55, y: 300, width: 20, height: 20)
+        square.frame = CGRect(x: 55, y: 300, width: 200, height: 200)
         square.backgroundColor = UIColor.redColor()
         
         // add the square to the screen
@@ -47,13 +47,25 @@ class ViewController: UIViewController {
         
         // we add the animation to the squares 'layer' property
         square.layer.addAnimation(anim, forKey: "animate position along path")
+        
+        
+        let button: UIButton = UIButton(type: UIButtonType.Custom) as UIButton
+        button.frame = CGRectMake(130, 70, 60, 20)
+        button.setTitle("Alert!", forState: UIControlState.Normal)
+        button.addTarget(self,action:Selector(alertMaker()), forControlEvents: UIControlEvents.TouchUpInside)
+        button.setTitleColor(UIColor.orangeColor(), forState: .Normal)
+        button.layer.borderColor = UIColor.whiteColor().CGColor
+        button.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 13)
+        square.addSubview(button)
 
+        
     }
     
 
-    @IBAction func AlertMe(sender: AnyObject) {
+    @IBAction func alertButton(sender: UIButton) {
         alertMaker()
     }
+
 
     func alertMaker(){
         let alertController = UIAlertController(title: "Default Style", message: "A standard alert.", preferredStyle: .Alert)

@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwE-wa-dYW">
-                                <rect key="frame" x="208" y="79" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwE-wa-dYW">
+                                <rect key="frame" x="200" y="79" width="63" height="30"/>
+                                <state key="normal" title="Alert Me!"/>
                                 <connections>
-                                    <action selector="AlertMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhk-UU-0y3"/>
+                                    <action selector="alertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vy0-rg-Urb"/>
                                 </connections>
                             </button>
                         </subviews>
