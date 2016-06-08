@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         
         let button: UIButton = UIButton(type: UIButtonType.Custom) as UIButton
         button.frame = CGRectMake(130, 70, 60, 20)
+        
         button.setTitle("Alert!", forState: UIControlState.Normal)
         button.addTarget(self,action:Selector(alertMaker()), forControlEvents: UIControlEvents.TouchUpInside)
         button.setTitleColor(UIColor.orangeColor(), forState: .Normal)
